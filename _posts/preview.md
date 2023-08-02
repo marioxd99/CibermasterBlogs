@@ -5,7 +5,7 @@ coverImage: '/assets/blog/preview/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Mario Pérez
-  picture: '/assets/blog/authors/jj.jpeg'
+  picture: '/assets/blog/authors/hacker.png'
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---

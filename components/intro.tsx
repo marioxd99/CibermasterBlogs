@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { CMS_NAME } from '../lib/constants'
 
 const Intro = () => {
@@ -12,5 +13,6 @@ const Intro = () => {
     </section>
   )
 }
+
 
 export default Intro
