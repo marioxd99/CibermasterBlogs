@@ -84,7 +84,6 @@ export default function Index({ allPosts }: Props) {
               <li className="page-item"><a className="page-link" style={{cursor: "pointer"}} onClick={nextHandler}>Next</a></li>
             </ul>
           </nav>
-          <h3>Pagina: {currentPage}</h3>
         </Container>
       </Layout>
     </>
