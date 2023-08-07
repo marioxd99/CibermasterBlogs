@@ -1,7 +1,7 @@
 ---
 title: 'TryHackMe - Cmess Resolución paso a paso'
 excerpt: 'En este post veremos como resolver la maquina CMESS de la web de tryhackme paso a paso.'
-coverImage: '/assets/blog/dynamic-routing/thm2.png'
+coverImage: '/assets/blog/dynamic-routing/linux.png'
 date: '2023-08-02T17:35:07.322Z'
 author:
   name: Mario Pérez
