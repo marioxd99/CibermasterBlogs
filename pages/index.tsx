@@ -75,7 +75,7 @@ export default function Index({ allPosts }: Props) {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={items} />}
-          <nav style={{marginBottom: "20px"}} aria-label="Page navigation example">
+          <nav style={{marginBottom: "30px"}} aria-label="Page navigation example">
             <ul className="pagination">
               <li className="page-item"><a className="page-link" style={{cursor: "pointer"}} onClick={prevHandler}>Previous</a></li>
               {
