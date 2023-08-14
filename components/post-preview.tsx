@@ -22,10 +22,11 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
-      <div className="mb-5">
+    <div className='card'>
+      <div className="mb-4 card-img-top mh-100">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
+      <div className='card-body'>
       <h3 className="text-3xl mb-3 leading-snug">
         <Link
           as={`/posts/${slug}`}
@@ -40,6 +41,8 @@ const PostPreview = ({
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
+      </div>
+      
     </div>
   )
 }

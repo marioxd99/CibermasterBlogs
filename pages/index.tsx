@@ -1,14 +1,13 @@
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
+import ToTop from '../components/toTop'
 import { useState } from 'react'
-import React from 'react';
-import Button from '@mui/material/Button';
+import { Pagination } from '@mui/material'
 
 type Props = {
   allPosts: Post[]
@@ -63,7 +62,6 @@ export default function Index({ allPosts }: Props) {
           <title>{`CiberMaster`}</title>
         </Head>
         <Container>
-          <Intro />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -84,13 +82,13 @@ export default function Index({ allPosts }: Props) {
               <li className="page-item"><a className="page-link" style={{cursor: "pointer"}} onClick={nextHandler}>Next</a></li>
             </ul>
           </nav>
+
+          <ToTop />
         </Container>
       </Layout>
     </>
   )
- 
 }
-
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
