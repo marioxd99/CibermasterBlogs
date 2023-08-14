@@ -7,7 +7,6 @@ import Head from 'next/head'
 import Post from '../interfaces/post'
 import ToTop from '../components/toTop'
 import { useState } from 'react'
-import { Pagination } from '@mui/material'
 
 type Props = {
   allPosts: Post[]
