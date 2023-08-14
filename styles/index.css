@@ -74,3 +74,22 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.navbar {
+  padding: 10px 0; /* Agregamos espacio alrededor del contenido */
+}
+
+/* Centramos verticalmente el texto en la barra de navegación */
+.navbar-text,
+.navbar-toggle {
+  display: flex;
+  align-items: center;
+}
+
+/* Cambios en el diseño para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-text {
+    flex-direction: column; /* Cambiamos la dirección del flex para apilar verticalmente */
+    align-items: flex-start; /* Alineamos el texto a la izquierda */
+  }
+}

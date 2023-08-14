@@ -32,31 +32,29 @@ export default function NavBar () {
   })
 
   return (
-    <nav
-      className="navbar navbar-light bg-light mb-25"
-      style={{ top: "0", width: "100%", position: "fixed", zIndex: "100" }}
-    >
-      <h2 className="ml-20">
-      <Link href="/" className="hover:underline" style={{color: "black"}}>
-        CiberMaster
-      </Link>
-      </h2>
-      <h4 className="text-center" style={{fontSize: "20px", fontFamily: "sans-serif", color: "black"}}>
-        Blog donde aprender a resolver maquinas y tenicas hacking
-      </h4>
-      <label
-        className="switch mr-10"
-        style={{ display: "inline-block", marginLeft: "25px" }}
-      >
-        <input
-          id="darkToogle"
-          type="checkbox"
-          checked={checked}
-          onChange={handleDarkMode}
-        ></input>
-        <span className="slider round"></span>
-      </label>
-    </nav>
+    <nav className="navbar navbar-light bg-light mb-25 fixed-top">
+    <div className="container"> {/* Agregamos un contenedor para alinear los elementos */}
+      <div className="navbar-brand">
+        <h2>
+          <Link href="/" className="hover:underline" style={{ color: "black" }}>
+            <img src={"/assets/blog/dynamic-routing/logo.png"} alt="logo" width={"220px"} />
+          </Link>
+        </h2>
+      </div>
+      <div> {/* Mueve el interruptor al lado derecho */}
+        <label className="switch">
+          <input
+            id="darkToggle"
+            type="checkbox"
+            checked={checked}
+            onChange={handleDarkMode}
+          />
+          <span className="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
+  
   );
 };
 
